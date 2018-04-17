@@ -51,25 +51,24 @@ states_number = {
 state_count = 0
 cities_count = 0
 
-result = { 'cities' : []}
+result = {}
 
 states = browser.find_by_xpath('//div[@id="segunda-coluna"]/ul/li/div/i')
 
+states.pop(0)
+
 for state in states:
-    if state_count == 0:
-        state_count += 1
-        continue
+    state_count += 1
 
     state.click()
 
     cities = browser.find_by_xpath('//div[@class="conjunto"]//a')
 
     for city in cities:
-        result['cities'].append({city.text : {'state': states_number[state_count]}})
         cities_count += 1
-    state_count += 1
-
-
+        result[cities_count] = {'name': city.text,
+                                'state':  {state_count : states_number[state_count]}}
+        
 browser.quit()
 
 
