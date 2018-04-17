@@ -104,5 +104,9 @@ venv.bak/
 *.log
 
 *.exe
+/tcl
+/Scripts
+/Include
+pip-selfcheck.json
 
 # End of https://www.gitignore.io/api/python
