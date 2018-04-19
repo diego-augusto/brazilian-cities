@@ -1,9 +1,9 @@
 # Cidades e Estados brasileiros
-Fonte: (https://cidades.ibge.gov.br/)
+Fonte: https://cidades.ibge.gov.br/
 
 ## Results
 |               | Json          | 
 | ------------- |:-------------:| 
-| Cidades       | [cities.json](https://github.com/diego-augusto/cidades-brasileiras/blob/master/src/cities.json) |
-| Estados       | [states.json](https://github.com/diego-augusto/cidades-brasileiras/blob/master/src/states.json) |
+| Cidades       | [cidades.json](https://github.com/diego-augusto/cidades-estados-brasileiros/blob/master/src/cidades.json) |
+| Estados       | [estados.json](https://github.com/diego-augusto/cidades-estados-brasileiros/blob/master/src/estados.json) |
 
